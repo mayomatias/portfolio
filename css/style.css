@@ -108,9 +108,6 @@ footer{
 
 
 @media (max-width: 768px) {
-    body{
-        background-color: #4717F6;
-    }
     #nav-hamburguer-menu{
         display: contents;
     }
