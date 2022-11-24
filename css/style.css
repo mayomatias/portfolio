@@ -64,19 +64,36 @@ a{
 }
 /*#endregion HEADER NAVBAR*/
 
+/*#region personal-description*/
 #personal-description{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     align-items: center;
     width: 100%;
     justify-content: center;
 }
 #personal-description div {
-    min-width: 582px;
+    
     width: 60%;
     margin-top: 30px;
     padding: 0px 10px;
 }
 #personal-description img {
     width: 20%;
+    min-width: 300px;
 }
+/*#endregion personal-description*/
+
+/*#region footer*/
+
+footer{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:10vw;
+    max-height: 75px;
+    width:100%;
+    background-color: #0E0B16;
+}
+
+/*#endregion footer*/
