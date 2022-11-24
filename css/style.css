@@ -52,6 +52,7 @@ nav ul {
     font-size: 1em;
     background-color: aliceblue;
     box-shadow: 5px 5px  #4717F6;
+    border: solid 2px black;
 }
 
 .nav-item:hover{
@@ -105,8 +106,6 @@ footer{
 }
 /*#endregion footer*/
 
-
-
 @media (max-width: 768px) {
     #nav-hamburguer-menu{
         display: contents;
@@ -120,7 +119,6 @@ footer{
     }
     .nav-item{
         text-align: center;
-        padding: 1rem;
         width:15rem;
         font-size: 1em;
         background-color: aliceblue;
@@ -128,5 +126,9 @@ footer{
     .nav-item:hover{
         color: #fff;
         background-color: #4717F6;
+    }
+    li a{
+        padding: 1rem;
+        display: block;
     }
   }
