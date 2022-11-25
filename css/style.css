@@ -17,6 +17,7 @@ body{
 
 header{
     height: 10vw;
+    min-height: 55px;
     max-height: 75px;
     background-color: #0E0B16;
 }
@@ -116,6 +117,7 @@ footer{
         top: 10vw;
         right: 0;
         flex-direction: column;
+        z-index: 999;
     }
     .nav-item{
         text-align: center;
