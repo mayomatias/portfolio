@@ -13,6 +13,9 @@
 body{
     background-color: #3e3c45;
     color: #fff;
+    position: relative;
+    padding-bottom: 11vw;
+    min-height: 100vh;
 }
 
 header{
@@ -71,18 +74,20 @@ a{
 }
 /*#endregion HEADER NAVBAR*/
 
+body{
+    height: 100%;
+}
 /*#region personal-description*/
 #personal-description{
     display: flex;
-    flex-wrap: wrap-reverse;
     align-items: center;
     width: 100%;
     justify-content: center;
 }
 #personal-description div {
-    width: 60%;
+    width: 80%;
     margin-top: 30px;
-    padding: 0px 10px;
+    padding: 0px 10px; 
 }
 #personal-description img {
     width: 20%;
@@ -97,16 +102,34 @@ a{
 
 /*#region footer*/
 footer{
-    position:fixed;
+    font-size: 14px;
+    position:absolute;
+    display: flex;
     left:0px;
     bottom:0px;
     height:10vw;
     max-height: 75px;
     width:100%;
     background-color: #0E0B16;
+    justify-content: space-between;
 }
+footer div{
+    height: 100%;
+}
+footer:first-child{
+    width: 80%;
+}
+footer:last-child{
+    width: 20%;
+}
+footer div img {
+    padding: 10%;
+    height: 100%;
+}
+
 /*#endregion footer*/
 
+/*#region @media(max-width: 768px)*/
 @media (max-width: 768px) {
     #nav-hamburguer-menu{
         display: contents;
@@ -133,4 +156,10 @@ footer{
         padding: 1rem;
         display: block;
     }
+    #personal-description{
+        flex-wrap: wrap-reverse;
+     }
+    
   }
+
+  /*#endregion @media(max-width: 768px)*/
