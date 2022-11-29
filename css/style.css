@@ -9,6 +9,18 @@
     font-family: "minimal", Arial, Helvetica, sans-serif;
 }
 
+body{
+    height: 100%;
+}
+h2{
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
 /*#region HEADER NAVBAR*/
 body{
     background-color: #3e3c45;
@@ -74,17 +86,7 @@ a{
 }
 /*#endregion HEADER NAVBAR*/
 
-body{
-    height: 100%;
-}
-h2{
-    font-size: 2rem;
-    margin: 1rem;
-    text-align: center;
-}
-h3{
-    text-align: center;
-}
+/*----------------------------------------PERSONAL DESC----------------------------------------*/
 /*#region personal-description*/
 #personal-description{
     display: flex;
@@ -105,9 +107,9 @@ h3{
 #personal-description h1{
     font-size: 2em;	
 }
-
 /*#endregion personal-description*/
 
+/*----------------------------------------ABOUT ME---------------------------------------------*/
 /*#region about-me*/
 #about-me{
     width: 100%;
@@ -160,8 +162,8 @@ h3{
 }
 /*#endregion about-me*/
 
+/*----------------------------------------PROJECTS---------------------------------------------*/
 /*#region projects*/
-
 .project-container {
     margin-top: 0.5rem;
     width: 100%;
@@ -184,6 +186,12 @@ h3{
 }
 /*#endregion projects*/
 
+/*-----------------------------------------CONTACT---------------------------------------------*/
+/*#region contact*/
+
+/*#endregion contact*/
+
+/*-----------------------------------------FOOTER----------------------------------------------*/
 /*#region footer*/
 footer{
     font-size: 14px;
@@ -225,9 +233,9 @@ footer div img {
     height: 80%;
    padding: 0.5rem;
 }
-
 /*#endregion footer*/
 
+/*-----------------------------------------MEDIA QUERY-----------------------------------------*/
 /*#region @media(max-width: 768px)*/
 @media (max-width: 768px) {
     #nav-hamburguer-menu{
