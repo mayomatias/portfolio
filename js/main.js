@@ -17,10 +17,12 @@ hambBtn.addEventListener('click',desplegarMenu);
 const aboutContainer = document.getElementById('about-img');
 const btn = document.getElementById('btn-pdf');
 const mostrarBtn = () => {
-        btn.style.display = 'block';
+    btn.style.display = 'block';
+    aboutContainer.style.opacity = '0.5'
 }
 const ocultarBtn = () => {
     btn.style.display = 'none';
+    aboutContainer.style.opacity = ''
 }
 
 aboutContainer.addEventListener('mouseover', mostrarBtn);

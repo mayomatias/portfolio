@@ -102,13 +102,13 @@ body{
 
 /*#region about-me*/
 #about-me{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 }
 #about-me h2{
     font-size: 2rem;
-    margin-right: 45%;
     margin-bottom: 10px;
 }
 
@@ -123,20 +123,19 @@ body{
 #about-img-container img {
     width: 100%;
 }
-#about-img-container p {
+#btn-pdf {
     z-index: 100;
     display: none;
-    padding: 1rem;
     position: absolute;
     text-align: center;
-    height: fit-content;
-    width: fit-content;
     font-size: 1em;
-    background-color: #4717F6;
+    background-color: #4717f681;
     border: solid 2px black;
+    box-shadow: 5px 5px  #08021a71;
+    padding: 20px;
 }
 
-#about-img-container p a {
+#btn-pdf a {
     color: #fff;
 }
 
@@ -149,7 +148,6 @@ body{
 }
 #about-img-container img:hover {
     transition: opacity 0.5s;
-    opacity: 0.5;
 } 
 
 #about-me-text p{
