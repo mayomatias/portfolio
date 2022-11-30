@@ -271,7 +271,20 @@ footer div img {
 
 /*-------------------------------------------SKILLS--------------------------------------------*/
 /*#region skills*/
-    .skill-description-container
+    .skill-description-container {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+
+    }
+    .skill-description-container img{
+        width: 10%;
+        margin: 5%;
+    }
+    .skill-description-container p{
+        width: 80%;
+        margin: 5%;
+    }
 
 /*#endregion skills*/
 
