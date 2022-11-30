@@ -1,4 +1,4 @@
-// MENU DE HAMBURGUESA NAV BAR
+// HAMBURGUER MENU NAV BAR
 const hambBtn = document.getElementById('nav-hamburguer-menu');
 const menu = document.getElementById('menu');
 
@@ -12,7 +12,7 @@ const desplegarMenu = () => {
 
 hambBtn.addEventListener('click',desplegarMenu);
 
-//ABOUT --> VER PDF BTN
+//ABOUT --> VIEW PDF BTN
 
 const aboutContainer = document.getElementById('about-img');
 const btn = document.getElementById('btn-pdf');

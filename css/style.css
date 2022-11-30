@@ -188,6 +188,40 @@ a{
 
 /*-----------------------------------------CONTACT---------------------------------------------*/
 /*#region contact*/
+#contact-form{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+#contact-form input {
+    font-family: 'Courier New', Courier, monospace;
+    width: 90%;
+    font-size: 1.5rem;
+}
+#contact-form textarea{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    width: 90%;
+    resize: none;
+}
+#contact-form button{
+    padding: 1rem 1.5rem;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 5px;
+    font-size: 1em;
+    background-color: aliceblue;
+    box-shadow: 5px 5px  #4717F6;
+    border: solid 2px black;
+}
+#contact-form button:hover{
+    color: #fff;
+    background-color: #4717F6;
+    box-shadow: 5px 5px  #fff;
+}
 
 /*#endregion contact*/
 
