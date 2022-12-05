@@ -118,16 +118,16 @@ a{
     align-items: center;
 }
 
-#about-me-description{
+.about-me-description{
     margin-top: 1rem;
     position: relative;
     display: flex;
     justify-content: space-around
 }
-#about-me-description #about-img-container, #about-me-text{
+.about-me-description .about-img-container, .about-me-text{
     width: 45%;
 }
-#about-img-container img {
+.about-img-container img {
     width: 100%;
     align-self: center;
 }
@@ -148,17 +148,17 @@ a{
 }
 
 
-#about-img-container{
+.about-img-container{
     display: flex;
     align-items: center;
     height: fit-content;
     justify-content: center;
 }
-#about-img-container img:hover {
+.about-img-container img:hover {
     transition: opacity 0.5s;
 } 
 
-#about-me-text p{
+.about-me-text p{
     margin-bottom: 16px;
 }
 /*#endregion about-me*/
