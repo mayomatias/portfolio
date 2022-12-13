@@ -369,7 +369,9 @@ footer div img {
     #personal-description{
         flex-wrap: wrap-reverse;
     }
-
+    .text-a-c {
+        text-align: center;
+    }
         /*----------------------------------------SKILLS---------------------------------------*/
         /*#region skillsss*/
         .skill-description-container{
