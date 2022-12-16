@@ -14,8 +14,11 @@ body{
 }
 h2{
     font-size: 2rem;
-    margin: 1rem;
+    margin: 1.5rem;
     text-align: center;
+    z-index: 22;
+    text-shadow: 1px 1px 30px #4717F6;
+    
 }
 h3{
     text-align: center;
@@ -112,25 +115,34 @@ a{
 /*----------------------------------------ABOUT ME---------------------------------------------*/
 /*#region about-me*/
 #about-me{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
-#about-me-description{
-    margin-top: 1rem;
+.about-me-description{
+    background-color: #080317ca;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 15px;
     position: relative;
-    display: flex;
-    justify-content: space-around
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,auto);
+    justify-items: stretch;
+    gap: 1.5rem;
+    grid-template-areas: 
+                "tex-top    tex-top"
+                "img        tex    "
+                "img        tex-ft "
+    ;
+    box-shadow: 0px 0px 1rem 0.5rem #4717F6;
 }
-#about-me-description #about-img-container, #about-me-text{
-    width: 45%;
-}
-#about-img-container img {
-    width: 100%;
-    align-self: center;
-}
+
 #btn-pdf {
     z-index: 100;
     display: none;
@@ -147,20 +159,35 @@ a{
     color: #fff;
 }
 
-
-#about-img-container{
+.about-img-container{
+    grid-area: img;
+    width: fit-content;
     display: flex;
     align-items: center;
-    height: fit-content;
     justify-content: center;
+    height: min-content;
 }
-#about-img-container img:hover {
+.about-img-container img:hover {
     transition: opacity 0.5s;
 } 
-
-#about-me-text p{
-    margin-bottom: 16px;
+.about-me-text-top{
+    grid-area: tex-top;
 }
+
+.about-me-text{
+    grid-area: tex;
+    align-self: center;
+}
+.about-me-text-ft{
+    grid-area: tex-ft;
+    align-self: center;
+}
+
+#about-img{
+    width: 100%;
+    min-width: 355px;
+}
+
 /*#endregion about-me*/
 
 /*----------------------------------------PROJECTS---------------------------------------------*/
@@ -178,6 +205,7 @@ a{
     background-color: #080317ca;
     margin-bottom: 0.5rem;
     border-radius: 15px;
+    box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
 }
 .project-description-container h3{
     margin: 1rem;
@@ -279,15 +307,23 @@ footer div img {
 
 /*-------------------------------------------SKILLS--------------------------------------------*/
 /*#region skills*/
-    .skill-description-container {
+    .skill-description-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        gap: 2rem;
         width: 90%;
-        margin: 0 auto;
+        margin: auto;
+    }
+    .skill-description-container {
+        text-align: center;
         padding: 1rem;
         display: flex;
-        gap: 1rem;
+        flex-direction: column;
         background-color: #080317ca;
-        margin-bottom: 0.5rem;
         border-radius: 15px;
+        box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
     }
     .skill-description-container img{
         align-self: center;
@@ -301,6 +337,19 @@ footer div img {
 
 /*-----------------------------------------MEDIA QUERY-----------------------------------------*/
 /*#region @media(max-width: 768px)*/
+
+@media (max-width: 992px){
+    .skill-description-section{
+        flex-direction: column;
+    }
+    .about-me-description{
+        grid-template-areas: 
+                            "tex-top    tex-top"
+                            "img        tex    "
+                            "tex-ft       tex-ft "
+    }
+}
+
 @media (max-width: 768px) {
     #nav-hamburguer-menu{
         display: contents;
@@ -330,17 +379,29 @@ footer div img {
     #personal-description{
         flex-wrap: wrap-reverse;
     }
-
+    .text-a-c {
+        text-align: center;
+    }
         /*----------------------------------------SKILLS---------------------------------------*/
         /*#region skillsss*/
         .skill-description-container{
-            flex-direction: column;
-            align-items: center;
-            padding: 0.5rem;
-
+            align-self: flex-start;
+            position: sticky;
         }
         /*#endregion skillsss*/
 
+        /*----------------------------------------ABOUT ME---------------------------------------------*/
+        /*#region about-me*/
+        .about-me-description{
+
+            display: flex;
+            flex-direction: column;
+
+        }
+        .about-me-text-top{
+            order: -1;
+        }
+        /*#endregion about-me*/
   }
 
   /*#endregion @media(max-width: 768px)*/
