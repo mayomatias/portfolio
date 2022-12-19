@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
     <link rel="icon" href="./src/assets/image/webLogoWithe.png">
     <title>Matias Mayo | HOME</title>
 </head>
@@ -23,11 +24,13 @@
         </nav>
     </header>
     <main>
-        <section id="personal-description">
-            <img src="./src/assets/image/8bitme.png" alt="">
-            <div>
-                <h1>I'm Matias Mayo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam deleniti vitae delectus repellat fugiat, debitis blanditiis dolorem? Officia nostrum veniam reprehenderit maxime consectetur fugiat repudiandae fuga adipisci assumenda voluptas.</p>
+        <section id="personal-description" class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row justify-content-between">
+                <img class="col-4" src="./src/assets/image/8bitme.png" alt="">
+                <div class="col-8">
+                    <h1>I'm Matias Mayo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error magnam deleniti vitae delectus repellat fugiat, debitis blanditiis dolorem? Officia nostrum veniam reprehenderit maxime consectetur fugiat repudiandae fuga adipisci assumenda voluptas.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -37,13 +40,14 @@
         </div>
         <div class="footer-img-container">
             <a href="https://www.linkedin.com/in/matias-mayo/">
-                <img src="./assets/image/logo-linkedin.png" alt=""> 
+                <img src="./src/assets/image/logo-linkedin.png" alt=""> 
             </a>
             <a href="https://github.com/mayomatias">
-                <img src="./assets/image/logo-github.png" alt="">
+                <img src="./src/assets/image/logo-github.png" alt="">
             </a>
         </div>
     </footer>
     <script src="./src/js/main.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

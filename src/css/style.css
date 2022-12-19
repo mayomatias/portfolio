@@ -91,12 +91,14 @@ a{
 
 /*----------------------------------------PERSONAL DESC----------------------------------------*/
 /*#region personal-description*/
-#personal-description{
+
+/*#personal-description{
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: center;
 }
+
 #personal-description div {
     width: 80%;
     margin-top: 30px;
@@ -109,13 +111,13 @@ a{
 
 #personal-description h1{
     font-size: 2em;	
-}
+}*/
+
 /*#endregion personal-description*/
 
 /*----------------------------------------ABOUT ME---------------------------------------------*/
 /*#region about-me*/
 #about-me{
-    width: 90%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -125,6 +127,7 @@ a{
 }
 
 .about-me-description{
+    width: 90%;
     background-color: #080317ca;
     padding: 1rem;
     margin-bottom: 0.5rem;
@@ -185,7 +188,6 @@ a{
 
 #about-img{
     width: 100%;
-    min-width: 355px;
 }
 
 /*#endregion about-me*/
@@ -376,9 +378,7 @@ footer div img {
         padding: 1rem;
         display: block;
     }
-    #personal-description{
-        flex-wrap: wrap-reverse;
-    }
+
     .text-a-c {
         text-align: center;
     }
