@@ -90,28 +90,6 @@ a{
 /*#endregion HEADER NAVBAR*/
 
 /*----------------------------------------PERSONAL DESC----------------------------------------*/
-/*#region personal-description*/
-
-/*#personal-description{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-}
-
-#personal-description div {
-    width: 80%;
-    margin-top: 30px;
-    padding: 0px 10px; 
-}
-#personal-description img {
-    width: 20%;
-    min-width: 300px;
-}
-
-#personal-description h1{
-    font-size: 2em;	
-}*/
 
 /*#endregion personal-description*/
 
@@ -309,32 +287,18 @@ footer div img {
 
 /*-------------------------------------------SKILLS--------------------------------------------*/
 /*#region skills*/
-    .skill-description-section{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: stretch;
-        gap: 2rem;
-        width: 90%;
-        margin: auto;
-    }
-    .skill-description-container {
-        text-align: center;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        background-color: #080317ca;
-        border-radius: 15px;
-        box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
-    }
-    .skill-description-container img{
-        align-self: center;
-        width: 20%;
-    }
-    .skill-description-container p{
-        width: 95%;
-    }
+.skill-description-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #080317ca;
+    border-radius: 15px;
+    height: 100%;
+    
+}
 
+  
 /*#endregion skills*/
 
 /*-----------------------------------------MEDIA QUERY-----------------------------------------*/
@@ -382,14 +346,6 @@ footer div img {
     .text-a-c {
         text-align: center;
     }
-        /*----------------------------------------SKILLS---------------------------------------*/
-        /*#region skillsss*/
-        .skill-description-container{
-            align-self: flex-start;
-            position: sticky;
-        }
-        /*#endregion skillsss*/
-
         /*----------------------------------------ABOUT ME---------------------------------------------*/
         /*#region about-me*/
         .about-me-description{
@@ -408,10 +364,34 @@ footer div img {
 
 
   @media (max-width: 480px) {
-        /*----------------------------------------SKILLS---------------------------------------*/
-        /*#region skillsss*/
-        .skill-description-container{
-            flex-direction: column;
-        }
-        /*#endregion skillsss*/
+
   }
+
+
+/*--------------------------------ANIMATION-------------------------------------------------*/
+.shadow-drop-center {
+	-webkit-animation: shadow-drop-center 1s cubic-bezier(.86,.05,.91,.99) both;
+	        animation: shadow-drop-center 1s cubic-bezier(.86,.05,.91,.99) both;
+}
+
+@-webkit-keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+              box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+    }
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+              box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+    }
+  }
+  
