@@ -1,0 +1,66 @@
+
+/*#region HEADER NAVBAR*/
+body{
+    background-color: #3e3c45;
+    color: #fff;
+    position: relative;
+    padding-bottom: 11vw;
+    min-height: 100vh;
+}
+
+header{
+    height: 10vw;
+    min-height: 55px;
+    max-height: 75px;
+    background-color: #0E0B16;
+}
+
+nav{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    margin-top: 5px;
+}
+.logo img{
+    height: 8vw;
+    max-height: 70px;
+}
+#nav-hamburguer-menu{
+    display: none;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-item{
+    padding: 0px 5px 3px;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 5px;
+    font-size: 1em;
+    background-color: aliceblue;
+    box-shadow: 5px 5px  #4717F6;
+    border: solid 2px black;
+}
+
+.nav-item:hover{
+    color: #fff;
+    background-color: #4717F6;
+    box-shadow: 5px 5px  #fff;
+}
+.nav-item:hover a{
+    color: #fff;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+/*#endregion HEADER NAVBAR*/
+
