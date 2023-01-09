@@ -1,0 +1,35 @@
+@import "../utilities/variables";
+@font-face {
+    font-family: "minimal";
+    src: url("../assets/font/PoClassic.ttf");
+}
+
+body{
+    background-color: $backg;
+    color: $font-primary;
+    position: relative;
+    padding-bottom: 11vw;
+    min-height: 100vh;
+}
+
+header{
+    height: 10vw;
+    min-height: 55px;
+    max-height: 75px;
+    background-color: #0E0B16;
+}
+
+body{
+    height: 100%;
+}
+h2{
+    font-size: 2rem;
+    margin: 1.5rem;
+    text-align: center;
+    z-index: 22;
+    text-shadow: 1px 1px 30px #4717F6;
+    
+}
+h3{
+    text-align: center;
+}

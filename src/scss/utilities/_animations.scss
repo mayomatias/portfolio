@@ -1,0 +1,28 @@
+
+/*--------------------------------ANIMATION-------------------------------------------------*/
+.shadow-drop-center {
+	-webkit-animation: shadow-drop-center 1s cubic-bezier(.86,.05,.91,.99) both;
+	        animation: shadow-drop-center 1s cubic-bezier(.86,.05,.91,.99) both;
+}
+
+@-webkit-keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+              box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+    }
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+              box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+    }
+  }
+  

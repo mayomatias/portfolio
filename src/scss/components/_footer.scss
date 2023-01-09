@@ -1,0 +1,43 @@
+/*-----------------------------------------FOOTER----------------------------------------------*/
+/*#region footer*/
+footer{
+    font-size: 14px;
+    position:absolute;
+    display: flex;
+    left:0px;
+    bottom:0px;
+    height:10vw;
+    max-height: 75px;
+    width:100%;
+    background-color: #0E0B16;
+    justify-content: space-around;
+}
+footer div{
+    height: 100%;
+}
+.footer-rights{
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.footer-rights p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-img-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+}
+.footer-img-container a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+footer div img {
+    height: 80%;
+   padding: 0.5rem;
+}
+/*#endregion footer*/

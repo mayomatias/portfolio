@@ -1,0 +1,77 @@
+/*----------------------------------------ABOUT ME---------------------------------------------*/
+/*#region about-me*/
+
+#about-me{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.about-me-description{
+    width: 90%;
+    background-color: $primary;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 15px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,auto);
+    justify-items: stretch;
+    gap: 1.5rem;
+    grid-template-areas: 
+                "tex-top    tex-top"
+                "img        tex    "
+                "img        tex-ft "
+    ;
+    box-shadow: 0px 0px 1rem 0.5rem $complement;
+}
+
+#btn-pdf {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-size: 1em;
+    background-color: #4717f681;
+    border: solid 2px $font-secondary;
+    box-shadow: 5px 5px  #08021a71;
+    padding: 20px;
+}
+
+#btn-pdf a {
+    color: #fff;
+}
+
+.about-img-container{
+    grid-area: img;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: min-content;
+}
+.about-img-container img:hover {
+    transition: opacity 0.5s;
+} 
+.about-me-text-top{
+    grid-area: tex-top;
+}
+
+.about-me-text{
+    grid-area: tex;
+    align-self: center;
+}
+.about-me-text-ft{
+    grid-area: tex-ft;
+    align-self: center;
+}
+
+#about-img{
+    width: 100%;
+}
+
+/*#endregion about-me*/

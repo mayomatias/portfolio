@@ -1,0 +1,16 @@
+/*-------------------------------------------SKILLS--------------------------------------------*/
+/*#region skills*/
+.skill-description-section{
+    width: 90%;
+    margin:auto;
+}
+.skill-description-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $primary;
+    border-radius: 15px;
+    height: 100%;
+} 
+/*#endregion skills*/

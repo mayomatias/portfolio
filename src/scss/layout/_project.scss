@@ -1,0 +1,31 @@
+/*----------------------------------------PROJECTS---------------------------------------------*/
+/*#region projects*/
+.project-container {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.project-description-container{
+    width: 90%;
+    padding: 1rem;
+    background-color: $primary;
+    margin-bottom: 0.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 1.5rem 0.5rem #4717F6;
+}
+.project-description-container h3{
+    margin: 1rem;
+}
+.project-description-container p{
+    margin-top: 1rem;
+    text-align: left;
+}
+.project-gif{
+    width: 45%;
+}
+.project-gif img{
+    width: 100%;
+}
+/*#endregion projects*/
