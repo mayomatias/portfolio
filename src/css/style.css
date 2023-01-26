@@ -163,9 +163,10 @@ h3 {
 
 .about-img-container {
   grid-area: img;
-  width: fit-content;
+  width: 60%;
   display: flex;
   align-items: center;
+  justify-self: center;
   justify-content: center;
   height: min-content; }
 
@@ -309,6 +310,8 @@ h3 {
     flex-direction: column; }
   .about-me-text-top {
     order: -1; }
+  .about-img-container {
+    width: fit-content; }
   /*#endregion about-me*/ }
 
 /*#endregion @media(max-width: 768px)*/

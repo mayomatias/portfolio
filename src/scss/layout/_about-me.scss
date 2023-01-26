@@ -48,14 +48,17 @@
 
 .about-img-container{
     grid-area: img;
-    width: fit-content;
+    width: 60%;
     display: flex;
     align-items: center;
+    justify-self: center;
     justify-content: center;
     height: min-content;
+
 }
 .about-img-container img:hover {
     transition: opacity 0.5s;
+    
 } 
 .about-me-text-top{
     grid-area: tex-top;
